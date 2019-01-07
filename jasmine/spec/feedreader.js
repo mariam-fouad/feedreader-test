@@ -105,10 +105,29 @@ $(function() {
 
     /*test suite New Feed Selection */
     describe ('New Feed Selection',()=>{
-        /* TODO: Write a test that ensures when a new feed is loaded
+        
+       let firstCallFeed , secondCallFeed;
+
+       /* call the loadFeed with two different ids*/
+        beforeEach (done=>{
+            loadFeed(0,()=>{
+                firstCallFeed = document.querySelector('.feed').innerHTML;
+
+                loadFeed(1,()=>{
+                    secondCallFeed= document.querySelector('.feed').innerHTML;;
+                });
+
+                done();
+            });
+        });
+
+        /* test that ensures when a new feed is loaded
         * by the loadFeed function that the content actually changes.
-        * Remember, loadFeed() is asynchronous.
         */
+        it('should ensures when a new feed is loaded that the content actually changes',(done)=>{
+            expect(firstCallFeed).not.toBe(secondCallFeed);
+            done();
+        })
     });
         
 }());
