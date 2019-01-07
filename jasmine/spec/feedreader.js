@@ -96,7 +96,7 @@ $(function() {
         * a single .entry element within the .feed container.
         */
         it('should have at least a single entry element within the feed container ',(done)=>{
-            const feedContainer = document.querySelectorAll('.feed .entry-link');
+            const feedContainer = document.querySelectorAll('.feed .entry');
             expect(feedContainer.length).toBeGreaterThanOrEqual(1);
             done();
         });
