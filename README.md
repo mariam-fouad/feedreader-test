@@ -6,10 +6,7 @@ This is a test project on a pre-existing application, the purpose of this projec
 ## How to use the feedreader test
 <ul>
    <li>
-      option 1 : Download or clone the repository and open the index.html in any browser.
-   </li>
-   <li>
-      option 2 : simply use this <a href="https://mariam-fouad.github.io/feedreader-test/">link</a> to view it.
+      Download or clone the repository and open the index.html in any browser.
    </li>
 </ul>
 
