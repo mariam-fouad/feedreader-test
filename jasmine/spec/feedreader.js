@@ -27,7 +27,7 @@ $(function() {
         });
 
 
-        /* This is the second test- it tests to make sure that the
+        /* tests to make sure that the
         * allFeeds object url has been defined and that it is not
         * empty. 
         */
@@ -41,7 +41,7 @@ $(function() {
          });
 
 
-        /* This is the second test- it tests to make sure that the
+        /*tests to make sure that the
         * allFeeds object name has been defined and that it is not
         * empty. 
         */
@@ -58,11 +58,14 @@ $(function() {
 
     /* test suite for the menu*/
     describe('The menu',()=>{
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
-         */
+
+        
+        /*tests to ensures the menu element is
+        * hidden by default
+        */
+        it('be hidden by default',()=>{
+            expect(document.querySelector('body').classList.contains('menu-hidden')).toBe(true);
+        });
 
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
