@@ -59,11 +59,11 @@ $(function() {
     /* test suite for the menu*/
     describe('The menu',()=>{
 
-        
+
         /*tests to ensures the menu element is
         * hidden by default
         */
-        it('be hidden by default',()=>{
+        it('should be hidden by default',()=>{
             expect(document.querySelector('body').classList.contains('menu-hidden')).toBe(true);
         });
 
