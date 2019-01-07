@@ -41,10 +41,18 @@ $(function() {
          });
 
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
-         */
+        /* This is the second test- it tests to make sure that the
+        * allFeeds object name has been defined and that it is not
+        * empty. 
+        */
+
+        it('should have a name defined and not empty',()=>{
+            allFeeds.forEach(feed => {
+                expect(feed.name).toBeDefined();
+                expect(feed.name).not.toBe('');
+                
+            });
+         });
     });
 
 
